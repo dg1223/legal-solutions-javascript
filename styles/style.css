@@ -1,0 +1,65 @@
+/* Fonts */
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+.navbar-brand,
+.banner-title,
+.card-title,
+h2
+{
+    font-family: 'EB Garamond', serif !important; 
+}
+
+/* Some custom CSS */
+header {
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+.banner{
+    height: 550px;
+}
+.practice img{
+    width: 72px;
+    height: 72px;
+}
+.card:hover{
+    background: linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0) 100%);
+    border: 1px solid #E7E7E7;
+}
+
+/* Image overlay in carousel */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.overlay img {
+    width: 100%;
+}
+.carousel-caption img{
+    width: 25%;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url('../images/minus.png') !important;
+}
+.accordion-button::after{
+    background-image: url('../images/plus.png') !important;
+}
+
+/* Some custom css for carousel for small screen */
+@media screen and (max-width: 576px) {
+    .carousel-caption img{
+        width: 15%;
+    }
+    .carousel-caption h3,
+    .carousel-caption h6,
+    .carousel-caption p
+    {
+        font-size: small;
+    }
+}
